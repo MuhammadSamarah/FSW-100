@@ -1,0 +1,76 @@
+--------html----------
+<!DOCTYPE html>
+<html lang="en">
+<header>
+    <link rel="stylesheet" href="styles.css">
+    <a href="index1.html">my link to another html page</a>
+    <title>HTML5 Semantics</title>
+</header>
+<body>
+    <div class="header">
+        <h1>Welcome Everyone</h1>
+    </div>
+    <nav>
+        <p>Navbar</p>
+        <!--remove the <p> to add links-->
+    </nav>
+    <main>
+        <h2>Main selector</h2>
+        <table style="width:100%">
+            <tr>
+              <th>First&Last Name:</th>
+              <td>Muhammad Samarah</td>
+            </tr>
+            <tr>
+              <th rowspan="2">Telephone:</th>
+              
+              <td>815 456 0779</td>
+            </tr>
+            <tr>
+                <tr>
+                    <th rowspan="2">ZipCode:</th>
+                    <td>32345 Corner dr</td>
+                   
+                  </tr>
+            </tr>
+          </table>
+        <div>
+        <h3>Article</h3>
+        </div>
+        <div>
+            <h3>Aside</h3>
+        </div>
+    </main>
+    <div>
+        <footer>Footer</footer>
+        <p>@ 2019 webdev student </p>
+    </div>
+</body>
+</html>
+--------------------------CSS--------------------
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 5px;
+    text-align: left;    
+  }
+
+
+.header {
+    color: blue;
+}
+------------------------------HTML second page-------------
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello Everyone hope you have a blessed day!!! </h1>
+</body>
+</html>
