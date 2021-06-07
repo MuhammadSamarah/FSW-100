@@ -1,0 +1,102 @@
+.content {
+    max-width: 500px;
+    margin: auto;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  
+}
+
+
+.date {
+  float: right;
+}
+
+  .navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    padding: 14px 35px;
+    text-decoration: none;
+  }
+
+  body {
+    font-family: Arial;
+    padding: 20px;
+    background: #f1f1f1;
+  }
+
+  .column {
+    float: left;
+    width: 75%;
+  }
+ 
+  .fakeimg {
+    background-color: #aaa;
+    width: 35%;
+    padding: 50px;
+    margin: 10px;
+    float: left;
+  }
+
+  .fakeimg1 {
+    background-image: url(https://image.shutterstock.com/image-vector/programming-code-coding-hacker-background-260nw-1714491562.jpg);
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center;
+      width: 50%;
+      float: left;
+      
+      
+
+  }
+
+  .fakeimg2 {
+    background-image: url(https://image.shutterstock.com/image-vector/abstract-futuristic-cyberspace-binary-code-260nw-740523562.jpg);
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+      width: 50%;
+      float: left;
+  }
+
+  .fakeimg3 {
+    background-image: url(https://marketingweek.imgix.net/content/uploads/2017/05/12103909/Coding-body-image-.jpg?auto=compress,format&q=60&w=750&h=460);
+      -webkit-background-size: cover;
+      background-size: cover;
+      background-position: center center;
+      width: 50%;
+      float: left;
+  }
+
+ .text {
+   left: 2px;
+   text-align: left;
+ }
+
+  .img {
+    width: 100%;
+    height: 100px;
+    object-fit: contain;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 50px;
+   
+  }
+
+  .titleHead {
+    text-align: center;
+  }
+ 
+  .card {
+    background-color: white;
+    padding: 50px;
+    margin-top: 50px;
+    width: 500px;
+  }
+  
+  @media screen and (max-width: 800px) {
+  }
