@@ -1,0 +1,46 @@
+.container {
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 1.5fr 0.8fr;
+    grid-template-areas: 
+    "nav nav main main"
+    "sidebar content1 content1 content1"
+    "footer footer footer footer";
+    grid-gap: 0.2rem;
+}
+
+nav {
+    background: red;
+    grid-area: nav;
+}
+
+main {
+    background: blue;
+    grid-area: main;
+}
+
+#sidebar{
+    background: green;
+    grid-area: sidebar;
+}
+
+#content1 {
+    background: purple;
+    grid-area: content1;
+}
+
+#content2 {
+    background: purple;
+    grid-area: content2;
+}
+
+#content3 {
+    background: purple;
+    grid-area: content3;
+}
+
+footer {
+    background: yellow;
+    grid-area: footer;
+}
