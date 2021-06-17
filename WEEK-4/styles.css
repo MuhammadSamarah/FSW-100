@@ -6,7 +6,7 @@
 .navbar {
   overflow: hidden;
   background-color: #333;
-  position: fixed 1px;
+  position: fixed;
   
 }
 
@@ -73,7 +73,8 @@
   }
 
  .text {
-   text-align: center;
+   left: 2px;
+   text-align: left;
  }
 
   .img {
