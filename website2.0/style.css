@@ -108,7 +108,9 @@ main {
 
 #content1 p {
     
-    text-align: center;
+    text-align: left;
+    border: 2px solid black;
+    margin-left: 12px;
 }
 
 #content1 img {
