@@ -1,0 +1,185 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+.container {
+    display: grid;
+    height: 160vh;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.8fr 1fr 0fr;
+    grid-template-areas: 
+    "nav nav nav nav"
+    "homeImg homeImg homeImg homeImg"
+    "sidebar content1 content1 main"
+    "footer footer footer footer";
+    grid-gap: 0.2rem; 
+    
+}
+
+.logo {
+    color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 2%;
+}
+
+nav {
+    background: #35424a;
+    grid-area: nav;
+}
+
+nav ul {
+    display: inline;
+ padding: 20px 20px 20px;
+ display: flex;
+ justify-content: space-between;
+ width: 20%;
+ list-style: none;
+
+}
+
+
+nav ul li:hover {
+ text-transform: uppercase;
+ background: gray;
+}
+
+nav li a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+
+main {
+    background: #35424a;
+    grid-area: main;
+    text-align: center;
+    color: aliceblue;
+}
+
+#sidebar{
+    background: #35424a;
+    grid-area: sidebar;
+    text-align: center;
+    
+}
+
+#sidebar h1 {
+    text-align: center;
+    color: aliceblue;
+    
+}
+
+#sidebar p {
+    text-align: center;
+    color: aliceblue;
+}
+
+#sidebar h3 {
+    text-align: center;
+    color: aliceblue;
+}
+
+.info {
+    margin-top: 3%;
+}
+
+#content1 {
+    background: tan;
+    grid-area: content1;
+}
+
+#content1 ul {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+   padding: 10% 10% 10%;
+   list-style: none;
+
+}
+
+
+
+#content1 p {
+    
+    text-align: center;
+}
+
+#content1 img {
+    margin-top: 5%;
+    margin-left: 23%;
+}
+
+#content2 {
+    background: purple;
+    grid-area: content2;
+}
+
+#content3 {
+    background: purple;
+    grid-area: content3;
+}
+
+#homeImg {
+    background: gray;
+   grid-area: homeImg;
+   background-image: url(http://absfreepic.com/absolutely_free_photos/small_photos/beautiful-star-sky-4256x2832_53112.jpg);
+   color: aliceblue;
+   text-align: center;
+}
+
+#homeImg p {
+    margin-top: 10%;
+    font-size: 20px;
+}
+
+.button_1 {
+    height: 38px;
+    background: gray;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: #ffffff;
+    
+}
+
+.button_1:hover {
+    text-shadow: 1px 1px #35424a;
+    color: darkslategrey;
+}
+footer {
+    background: yellow;
+    grid-area: footer;
+    height: 100px;
+    
+    
+}
+/* tablet */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.8fr 1.5fr 0.8fr 0.8fr;
+        grid-template-areas: 
+        "nav nav nav "
+        "sidebar content1 content1"
+        "main main main"
+        "footer footer footer ";
+    }
+}
+/* phone */
+@media screen and (max-width: 500px) {
+    .container{
+        grid-template-columns: 1fr;
+        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+        grid-template-areas: 
+        "nav"
+        "sidebar"
+        "main"
+        "content1"
+        "footer";
+    }
+}
