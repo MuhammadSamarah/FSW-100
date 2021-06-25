@@ -3,9 +3,49 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'poppins', sans-serif ;
-    background-color: beige;
+    
 }
 
+nav {
+    background: #35424a;
+    grid-area: nav;
+    margin-top: 0%;
+    
+}
+
+nav ul {
+    display: inline;
+ padding: 20px 20px 20px;
+ display: flex;
+ justify-content: space-between;
+ width: 25%;
+ list-style: none;
+ background-color: #35424a;
+}
+
+
+nav ul li:hover {
+ text-transform: uppercase;
+ background: gray;
+ background-color: #35424a;
+
+}
+
+nav li a{
+    color: aliceblue;
+    text-decoration: none;
+    background-color: #35424a;
+}
+
+.logo {
+    color: aliceblue;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+    text-align: center;
+    background-color: #35424a;
+    font-family: 'Staatliches', cursive;                               /* Google Font*/
+}
 
 .contact {
     position: relative;
@@ -15,6 +55,8 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    background: url(https://images.pexels.com/photos/8412190/pexels-photo-8412190.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940);
+    background-size: cover;
 }
 
 .contact .content {
@@ -25,12 +67,15 @@
 .contact .content h2 {
     font-size: 36px;
     font-weight: 500;
-    color: #fff
+    color: #00bcd4
 }
 
+
+
 .contact .content p {
-    font-weight: 300;
-    color: #fff
+    font-weight: 500;
+    color: #fff;
+    font-size: 25px;
 }
 
 .container {
@@ -67,7 +112,7 @@
 .container .contactInfo .box .text {
     display: flex;
     margin-left: 20px;
-    font-size: 16px;
+    font-size: 20px;
     color: #fff;
     flex-direction: column;
     font-weight: 300;
@@ -81,12 +126,13 @@
 .contactForm {
     width: 40%;
     padding: 40px;
-    background: #fff;
+    background: #35424a;
+    
 }
 
 .contactForm h2 {
     font-size: 30px;
-    color: #333;
+    color: #00bcd4;
     font-weight: 500;
 }
 
@@ -94,6 +140,7 @@
     position: relative;
     width: 100%;
     margin-top: 10px;
+    
 }
 
 .contactForm .inputBox input,
@@ -116,7 +163,7 @@
     margin: 10px 0;
     pointer-events: none;
     transition: 0.5s;
-    color: #666;
+    color: #00bcd4;
 }
 
 .contactForm .inputBox input:focus ~ span,

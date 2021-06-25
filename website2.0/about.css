@@ -5,20 +5,20 @@
 }
 .container {
     display: grid;
-    height: 160vh;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 0.8fr 1fr 0fr;
+    height: 110vh;
+    grid-template-columns: 0.3fr 1fr 1fr 0.3fr;
+    grid-template-rows: 0.2fr 1fr 1fr 1fr;
     grid-template-areas: 
     "nav nav nav nav"
-    "homeImg homeImg homeImg homeImg"
     "sidebar content1 content1 main"
-    "footer footer footer footer";
+    "sidebar content1 content1 main"
+    "sidebar content1 content1 main";
     grid-gap: 0.2rem; 
     
 }
 
 .icon {
-    color: aliceblue;
+    
     margin-top: 1%;
     
 }
@@ -64,32 +64,18 @@ nav li a{
 main {
     background: #35424a;
     grid-area: main;
-    text-align: center;
+    
     color: aliceblue;
 }
 
 #sidebar{
     background: #35424a;
     grid-area: sidebar;
-    text-align: center;
+    
     
 }
 
-#sidebar h1 {
-    text-align: center;
-    color: aliceblue;
-    
-}
 
-#sidebar p {
-    text-align: center;
-    color: aliceblue;
-}
-
-#sidebar h3 {
-    text-align: center;
-    color: aliceblue;
-}
 
 .info {
     margin-top: 3%;
@@ -98,49 +84,20 @@ main {
 #content1 {
     background: tan;
     grid-area: content1;
-}
-
-#content1 ul {
-    display: flex;
     text-align: center;
-    justify-content: space-between;
-   padding: 10% 10% 10%;
-   list-style: none;
-   
-
+    
 }
-
-
 
 #content1 p {
-    
-    text-align: left;
+    background: tan;
+    grid-area: content1;
+    text-align: center;
+    font-size: larger;
     border: 2px solid black;
-    margin-left: 12px;
+    
 }
 
-#content1 img {
-    margin-top: 5%;
-    margin-left: 28%;
-}
 
-#content2 {
-    background: purple;
-    grid-area: content2;
-}
-
-#content3 {
-    background: purple;
-    grid-area: content3;
-}
-
-#homeImg {
-    background: gray;
-   grid-area: homeImg;
-   background-image: url(http://absfreepic.com/absolutely_free_photos/small_photos/beautiful-star-sky-4256x2832_53112.jpg);
-   color: aliceblue;
-   text-align: center;
-}
 
 #homeImg p {
     margin-top: 10%;
@@ -161,34 +118,59 @@ main {
     text-shadow: 1px 1px #35424a;
     color: darkslategrey;
 }
-footer {
-    background: gray;
-    grid-area: footer; 
-    
-    text-align: center;
-    color: aliceblue;
+
+#content1 h3 {
+    border: 2px solid black;
 }
+
+#content1 h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+
 
 
 /* tablet */
 @media screen and (max-width: 768px) {
     .container {
         grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: 0.8fr 1.5fr 0.8fr 0.8fr;
+        grid-template-rows: 0.2fr 2fr 2fr;
         grid-template-areas: 
         "nav nav nav "
-        "homeImg homeImg homeImg"
-        "content1 content1 main"
-        "sidebar sidebar sidebar"
+        "content1 content1 content1"
+        "content1 content1 content1"
+        "content1 content1 content1"
         ;
     }
 
-    footer {
-        color: #35424a;
-    }
+  #content1 h3 {
+      margin-top: 0%;
+      background-color: tan;
+  }
 
     #content1 img {
-        margin-left: 17%;
+        max-width: 100%;
+        margin-left: 0;
+        background-color: tan;
+        
+    }
+
+    nav ul {
+    display: flex;
+    justify-content: space-between;
+     width: 20%;
+    
+    }
+    
+    
+    nav ul li:hover {
+     text-transform: uppercase;
+     background: gray;
+    }
+    
+    nav li a{
+        color: aliceblue;
+        text-decoration: none;
     }
 
     #homeImg p {
@@ -197,28 +179,54 @@ footer {
 
 }
 /* phone */
+* {
+    margin: 0px;
+    padding: 0px;
+}
 @media screen and (max-width: 500px) {
     .container{
         grid-template-columns: 1fr;
         grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr ;
         grid-template-areas: 
         "nav"
-        "homeImg"
         "content1"
-        "main"
-        "sidebar"
+        "content1"
+        "content1"
+        "content1"
         ;
+       
     }
-
-  footer {
-      color: #35424a;
-  }
+ 
+    nav ul {
+        display: inline;
+     padding: 20px 20px 20px;
+     display: flex;
+     justify-content: space-between;
+     width: 20%;
+     list-style: none;
+    
+    }
+    
+    
+    nav ul li:hover {
+     text-transform: uppercase;
+     background: gray;
+    }
+    
+    nav li a{
+        color: aliceblue;
+        text-decoration: none;
+    }
 
   #homeImg p {
     margin-bottom: 3%;
 }
 
-  #content1 img {
-    margin-left: 16%;
+#content1 img {
+    max-width: 100%;
+    margin-left: 0;
+    
 }
+
+
 }
